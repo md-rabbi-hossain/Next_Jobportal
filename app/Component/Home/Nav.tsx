@@ -2,8 +2,12 @@ import Link from "next/link";
 import React from "react";
 import logoimage from "@/public/images/logo.png";
 import Image from "next/image";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/auth";
+import User from "../Helper/User";
 
-const Nav = () => {
+const Nav = async () => {
+  const session = await getServerSession(authOptions);
   return (
     <div className=" h-[13vh] overflow-hidden shadow-md">
       <div className=" w-[90%] md:h-[90%] mx-auto flex justify-between items-center">
@@ -19,11 +23,16 @@ const Nav = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <Link href="/signup">
-            <button className="px-4 py-1.5  text -[14px] sm:text[16px] sm:px-6 sm:py-2 bg-blue-600 font-semibold text-white rounded-lg  hover:bg-blue-800 transition-all duration-300 ">
-              signup
-            </button>
-          </Link>
+          {!session && (
+            <Link href="/signup">
+              <button className="px-4 py-1.5  text -[14px] sm:text[16px] sm:px-6 sm:py-2 bg-blue-600 font-semibold text-white rounded-lg  hover:bg-blue-800 transition-all duration-300 ">
+                signup
+              </button>
+            </Link>
+          )}
+
+          {/* <h1>{session?.user?.name}</h1> */}
+          {session && <User session={session} />}
         </div>
       </div>
     </div>
