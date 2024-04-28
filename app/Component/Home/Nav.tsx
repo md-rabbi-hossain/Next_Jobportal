@@ -30,8 +30,6 @@ const Nav = async () => {
               </button>
             </Link>
           )}
-
-          {/* <h1>{session?.user?.name}</h1> */}
           {session && <User session={session} />}
         </div>
       </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import Nav from "./Nav";
+import Hero from "./Hero";
 
 const Home = () => {
   return (
     <div>
-      <h1>Hom</h1>
+      <Hero />
     </div>
   );
 };
