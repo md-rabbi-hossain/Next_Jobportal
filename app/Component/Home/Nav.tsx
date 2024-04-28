@@ -9,7 +9,7 @@ import User from "../Helper/User";
 const Nav = async () => {
   const session = await getServerSession(authOptions);
   return (
-    <div className=" h-[13vh] overflow-hidden shadow-md">
+    <div className=" h-[13vh]  shadow-md">
       <div className=" w-[90%] md:h-[90%] mx-auto flex justify-between items-center">
         <div className=" w-[150px] h-[150px] md:w-[250px] md:h-[250px]">
           <Link href={"/"}>
