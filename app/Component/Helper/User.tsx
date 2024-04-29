@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Session } from "next-auth";
 import Image from "next/image";
+import { AppContext } from "../Context/Provider";
 
 interface Props {
   session: Session;

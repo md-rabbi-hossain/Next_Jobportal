@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import heroimage from "../../../public/images/hero.svg";
+import Search from "../Helper/Search";
 const Hero = () => {
   return (
     <div className="pt-[5rem] pb-[3rem]">
@@ -18,18 +19,8 @@ const Hero = () => {
               voluptates sint quas sapiente quo quia velit maiores iure cumque
               eaque!
             </p>
-            <div className="mt-[1.5rem]">
-              <input
-                type="text"
-                placeholder="Search job"
-                className="w-[60%] md:w-[70%] lg:w-[75%] px-5 py-4 outline-none rounded-l-md bg-gray-200"
-              />
-              <button className="px-5 py-4 outline-none rounded-r-md bg-blue-500 text-white">
-                Search
-              </button>
-            </div>
+            <Search />
           </div>
-
           <div className="hidden lg:block">
             <Image src={heroimage} alt="hero-image" width={700} height={400} />
           </div>
