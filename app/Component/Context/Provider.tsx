@@ -1,12 +1,14 @@
 "use client";
 
+import { JobData } from "@/data";
 import React, { createContext, ReactNode } from "react";
-import JobData from "@/data";
+
 type JobDataType = typeof JobData;
 
 type ContextType = {
   jobData: JobDataType;
 };
+
 export const AppContext = createContext<ContextType | undefined>(undefined);
 
 export function AppWrapper({ children }: { children: ReactNode }) {

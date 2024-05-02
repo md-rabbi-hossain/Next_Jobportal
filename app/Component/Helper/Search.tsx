@@ -25,8 +25,6 @@ const Search: React.FC<SearchProps> = () => {
     setSearchResults(filteredResults || []);
   };
 
-  console.log(searchResults);
-
   return (
     <div>
       <div className="mt-[1.5rem]">

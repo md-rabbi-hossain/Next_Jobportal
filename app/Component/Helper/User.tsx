@@ -3,7 +3,6 @@
 import { useContext, useState } from "react";
 import { Session } from "next-auth";
 import Image from "next/image";
-import { AppContext } from "../Context/Provider";
 
 interface Props {
   session: Session;
@@ -15,7 +14,6 @@ const User = ({ session }: Props) => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
   return (
     <div className="relative">
       <div className="cursor-pointer" onClick={toggleDropdown}>
