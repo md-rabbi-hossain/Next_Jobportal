@@ -12,18 +12,20 @@ const Search: React.FC<SearchProps> = () => {
   const [searchResults, setSearchResults] = useState<Job[]>([]);
 
   interface Job {
-    title: string;
+    name: string;
   }
+
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   };
 
   const handleSearch = () => {
     const filteredResults = jobData.filter((job: Job) =>
-      job.title.toLowerCase().includes(searchQuery.toLowerCase())
+      job.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setSearchResults(filteredResults || []);
   };
+  console.log(searchResults);
 
   return (
     <div>

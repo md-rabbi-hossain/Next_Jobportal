@@ -1,14 +1,23 @@
 import React from "react";
 interface props {
-  Job: Job;
+  Job: props;
+  company: string;
+  location: string;
+  description: string;
+  salary: string;
 }
 const Jobcard = ({ Job }: props) => {
+  console.log(Job.company);
   return (
-    <div className="p-4 mb-6 border-2 cursor-pointer hover:scale-110 hover:shadow-sm transition-all duration-300 border-gray-500 rounded-lg h-[200px] overflow-hidden">
-      <h1 className="text-black font-semibold">{Job.title}</h1>
-      <p className="text-gray-700 overflow-hidden   h-24 overflow-ellipsis">
+    <div className="p-4 mb-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
+      <h1 className="text-xl font-semibold text-gray-800 mb-2">{Job.title}</h1>
+      <p className="text-sm text-gray-600 mb-1">
+        {Job.company} - {Job.location}
+      </p>
+      <p className="text-gray-700 overflow-hidden   h-24  overflow-ellipsis">
         {Job.description}
       </p>
+      <p className="text-lg font-semibold text-blue-600">{Job.salary}</p>
     </div>
   );
 };

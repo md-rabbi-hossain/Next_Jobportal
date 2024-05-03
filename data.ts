@@ -134,7 +134,7 @@ export const JobData: JobCategory[] = [
       },
       {
         id: 203,
-        title: "Licensed Practical Nurse (LPN)",
+        title: "Licensed Practical Nurse",
         company: "Care Providers Inc.",
         location: "New York, NY",
         image: "/public/images/licensed-practical-nurse.png",
