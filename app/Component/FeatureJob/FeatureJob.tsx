@@ -1,14 +1,30 @@
-import React from "react";
-import Heading from "../Helper/Heading";
+"use client";
 
-const FeatureJob = () => {
+import React, { useContext } from "react";
+import Heading from "../Helper/Heading";
+import Jobcard from "../Helper/Jobcard";
+import { AppContext } from "../Context/Provider";
+
+interface Job {
+  id: string;
+  jobs: string;
+}
+
+const FeatureJob: React.FC = () => {
+  const { jobData } = useContext(AppContext);
+
   return (
-    <div>
+    <>
       <Heading
         Heading="Featured jobs"
         subheading="Know your worth and find the job and qualify your life"
       />
-    </div>
+      <div className="mt-20 w-[90%] mx-auto  grid grid-cols-1 lg:grid-cols-3 gap-12 items-center ">
+        {jobData.map((item: Job) => (
+          <Jobcard item={item.jobs} key={item.id} />
+        ))}
+      </div>
+    </>
   );
 };
 

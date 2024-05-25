@@ -26,7 +26,7 @@ const User = ({ session }: Props) => {
         />
       </div>
       {isDropdownOpen && (
-        <div className="absolute right-0 mt-2 w- bg-blue-400 h-60 rounded-lg shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w- bg-blue-400 h-60 rounded-lg shadow-lg z-50  sm:block md:block">
           {/* Dropdown content */}
           <div className="p-4">
             {/* Example user data */}

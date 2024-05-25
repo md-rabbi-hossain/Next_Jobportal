@@ -1,4 +1,16 @@
 import icon1 from "./public/images/c1.png";
+import icon2 from "./public/images/c2.png";
+import icon3 from "./public/images/c3.png";
+import icon4 from "./public/images/c4.png";
+import icon5 from "./public/images/c5.png";
+import icon6 from "./public/images/c6.png";
+
+import job1 from "./public/images/icon1.png";
+import job2 from "./public/images/icon2.png";
+import job3 from "./public/images/icon3.png";
+import job4 from "./public/images/icon4.png";
+import medical from "./public/images/doctor_9165999.png";
+import pharma from "./public/images/pharmacist_2212156.png";
 
 export type Job = {
   id: number;
@@ -45,7 +57,7 @@ export const JobData: JobCategory[] = [
         title: "Data Scientist",
         company: "Data Insights Co.",
         location: "New York, NY",
-        image: "/public/images/data-scientist.png",
+        image: job1,
         salary: "90k - 110k",
         description:
           "Analyze complex data sets to uncover insights and drive decision-making.",
@@ -57,7 +69,7 @@ export const JobData: JobCategory[] = [
         title: "Web Developer",
         company: "Web Solutions Co.",
         location: "Seattle, WA",
-        image: "/public/images/web-developer.png",
+        image: job2,
         salary: "70k - 90k",
         description:
           "Build and maintain websites and web applications using HTML, CSS, and JavaScript.",
@@ -69,7 +81,7 @@ export const JobData: JobCategory[] = [
         title: "UX/UI Designer",
         company: "Design Innovations Inc.",
         location: "Los Angeles, CA",
-        image: "/public/images/ux-ui-designer.png",
+        image: job1,
         salary: "75k - 95k",
         description:
           "Create user-friendly interfaces and designs for digital products and applications.",
@@ -81,7 +93,7 @@ export const JobData: JobCategory[] = [
         title: "Network Engineer",
         company: "Network Solutions Ltd.",
         location: "Chicago, IL",
-        image: "/public/images/network-engineer.png",
+        image: job4,
         salary: "85k - 110k",
         description:
           "Design, implement, and manage computer networks to ensure smooth communication and connectivity.",
@@ -93,7 +105,7 @@ export const JobData: JobCategory[] = [
         title: "Product Manager",
         company: "Product Innovations Co.",
         location: "San Jose, CA",
-        image: "/public/images/product-manager.png",
+        image: job2,
         salary: "100k - 130k",
         description:
           "Lead the development and launch of new products by collaborating with cross-functional teams.",
@@ -106,7 +118,7 @@ export const JobData: JobCategory[] = [
     id: 2,
     name: "Healthcare",
     description: "Find rewarding careers in the healthcare sector.",
-    icon: icon1,
+    icon: icon2,
     open: 233,
     jobs: [
       {
@@ -114,7 +126,7 @@ export const JobData: JobCategory[] = [
         title: "Registered Nurse",
         company: "Healthcare Services LLC",
         location: "Chicago, IL",
-        image: "/public/images/registered-nurse.png",
+        image: medical,
         salary: "60k - 80k",
         description:
           "Provide patient care, administer medications, and assist in medical procedures.",
@@ -125,7 +137,7 @@ export const JobData: JobCategory[] = [
         title: "Medical Doctor",
         company: "General Hospital",
         location: "Los Angeles, CA",
-        image: "/public/images/medical-doctor.png",
+        image: job4,
         salary: "150k - 200k",
         description:
           "Diagnose and treat illnesses, injuries, and other medical conditions.",
@@ -137,7 +149,7 @@ export const JobData: JobCategory[] = [
         title: "Licensed Practical Nurse",
         company: "Care Providers Inc.",
         location: "New York, NY",
-        image: "/public/images/licensed-practical-nurse.png",
+        image: medical,
         salary: "40k - 60k",
         description:
           "Provide basic nursing care under the supervision of registered nurses or physicians.",
@@ -149,7 +161,7 @@ export const JobData: JobCategory[] = [
         title: "Medical Assistant",
         company: "Healthcare Clinics Ltd.",
         location: "Houston, TX",
-        image: "/public/images/medical-assistant.png",
+        image: medical,
         salary: "30k - 40k",
         description:
           "Assist healthcare professionals in medical offices or clinics with administrative and clinical tasks.",
@@ -161,7 +173,7 @@ export const JobData: JobCategory[] = [
         title: "Pharmacist",
         company: "Pharmacy Solutions Inc.",
         location: "Philadelphia, PA",
-        image: "/public/images/pharmacist.png",
+        image: pharma,
         salary: "90k - 120k",
         description:
           "Dispense medications, provide drug information, and ensure safe medication use.",
@@ -173,7 +185,7 @@ export const JobData: JobCategory[] = [
         title: "Physical Therapist",
         company: "Rehabilitation Center",
         location: "Miami, FL",
-        image: "/public/images/physical-therapist.png",
+        image: job3,
         salary: "70k - 90k",
         description:
           "Assess and treat patients with physical injuries or disabilities to improve movement and function.",
@@ -186,7 +198,7 @@ export const JobData: JobCategory[] = [
     id: 3,
     name: "Sales",
     description: "Exciting opportunities in the sales field.",
-    icon: icon1,
+    icon: icon3,
     open: 313,
     jobs: [
       {
@@ -219,7 +231,7 @@ export const JobData: JobCategory[] = [
     id: 4,
     name: "Marketing",
     description: "Explore dynamic careers in the marketing industry.",
-    icon: icon1,
+    icon: icon4,
     open: 63,
     jobs: [
       {
@@ -253,7 +265,7 @@ export const JobData: JobCategory[] = [
     name: "Front Desk",
     description:
       "Welcome guests, handle reservations, and provide excellent customer service.",
-    icon: icon1,
+    icon: icon5,
     open: 113,
     jobs: [
       {
@@ -287,7 +299,7 @@ export const JobData: JobCategory[] = [
     name: "Housekeeping",
     description:
       "Maintain cleanliness and order in guest rooms and common areas.",
-    icon: icon1,
+    icon: icon6,
     open: 132,
     jobs: [
       {
@@ -319,7 +331,7 @@ export const JobData: JobCategory[] = [
     name: "Customer Service",
     description:
       "Opportunities to provide excellent customer support and assistance.",
-    icon: icon1,
+    icon: icon4,
     open: 43,
     jobs: [
       {
@@ -352,7 +364,7 @@ export const JobData: JobCategory[] = [
     id: 8,
     name: "Engineering",
     description: "Exciting opportunities in the field of engineering.",
-    icon: icon1,
+    icon: icon5,
     open: 14,
     jobs: [
       {
@@ -386,7 +398,7 @@ export const JobData: JobCategory[] = [
     name: "Education and Teaching",
     description:
       "Opportunities to make a difference through teaching and education.",
-    icon: icon1,
+    icon: icon3,
     open: 13,
     jobs: [
       {
@@ -418,7 +430,7 @@ export const JobData: JobCategory[] = [
   {
     id: 10,
     name: "Legal",
-    icon: icon1,
+    icon: icon2,
     open: 70,
     jobs: [
       {

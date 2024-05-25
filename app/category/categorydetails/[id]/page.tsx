@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import { AppContext } from "@/app/Component/Context/Provider";
-import Jobcard from "@/app/Component/Helper/Jobcard";
+import DetailsJob from "@/app/Component/Helper/Detailsjob";
 
 interface CategoryDetailsProps {
   params: {
@@ -23,7 +23,7 @@ const CategoryDetails: React.FC<CategoryDetailsProps> = ({ params }) => {
       </div>
       <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
         {foundData.jobs.map((Job) => {
-          return <Jobcard Job={Job} key={Job.id} />;
+          return <DetailsJob Job={Job} key={Job.id} />;
         })}
       </div>
     </div>

@@ -1,24 +1,55 @@
+import Image from "next/image";
 import React from "react";
-interface props {
-  Job: props;
-  company: string;
+import { BiMoney } from "react-icons/bi";
+import { FaMapLocation } from "react-icons/fa6";
+
+interface Job {
+  title: string;
+  image: string;
   location: string;
-  description: string;
   salary: string;
 }
-const Jobcard = ({ Job }: props) => {
-  console.log(Job.company);
+
+interface Props {
+  item: Job[];
+}
+
+const Jobcard: React.FC<Props> = ({ item }) => {
+  const Sliced = item.slice(2, 6);
   return (
-    <div className="p-4 mb-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
-      <h1 className="text-xl font-semibold text-gray-800 mb-2">{Job.title}</h1>
-      <p className="text-sm text-gray-600 mb-1">
-        {Job.company} - {Job.location}
-      </p>
-      <p className="text-gray-700 overflow-hidden   h-24  overflow-ellipsis">
-        {Job.description}
-      </p>
-      <p className="text-lg font-semibold text-blue-600">{Job.salary}</p>
-    </div>
+    <>
+      {Sliced.map((job, index) => (
+        <div
+          key={index}
+          className="p-4 mb-6 relative border-2 border-gray-400 hover:scale-110 hover:shadow-sm transition-all duration-300 rounded-lg"
+        >
+          <div className=" flex items-center space-x-3 ">
+            <div>
+              <Image src={job.image} alt={job.title} height={50} width={50} />
+            </div>
+            <div>
+              <h1 className="text-[17px] font-semibold mb-[0.4rem]">
+                {job.title}
+              </h1>
+              <div className="flex items-center space-x-4 md:space-x-10 ">
+                <div className="flex items-center space-x-2">
+                  <FaMapLocation className=" w-[0.8rem] h-[0.6rem] text-pink-700" />
+                  <p className="text-[14px] text-black font-semibold">
+                    {job.location}
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <BiMoney className=" w-[0.8rem] h-[0.6rem] text-pink-700" />
+                  <p className="text-[14px] text-black font-semibold">
+                    {job.salary}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 
