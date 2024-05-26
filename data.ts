@@ -45,8 +45,8 @@ export const JobData: JobCategory[] = [
         title: "Software Engineer",
         company: "Tech Solutions Inc.",
         location: "San Francisco, CA",
-        image: "/public/images/software-engineer.png",
-        salary: "80k - 100k",
+        image: job1,
+        salary: "80k - 95k",
         description:
           "Design and develop software applications using various programming languages.",
         requirements:
@@ -218,7 +218,7 @@ export const JobData: JobCategory[] = [
         title: "Sales Manager",
         company: "Global Sales Corp.",
         location: "Chicago, IL",
-        image: "/public/images/sales-manager.png",
+        image: pharma,
         salary: "80k - 120k",
         description:
           "Lead and motivate sales teams, develop sales strategies, and oversee sales operations.",
@@ -239,7 +239,7 @@ export const JobData: JobCategory[] = [
         title: "Marketing Coordinator",
         company: "Marketing Solutions Agency",
         location: "Los Angeles, CA",
-        image: "/public/images/marketing-coordinator.png",
+        image: medical,
         salary: "45k - 60k",
         description:
           "Assist in the development and implementation of marketing campaigns, analyze market trends, and coordinate promotional activities.",
@@ -251,7 +251,7 @@ export const JobData: JobCategory[] = [
         title: "Digital Marketing Specialist",
         company: "Tech Marketing Group",
         location: "San Francisco, CA",
-        image: "/public/images/digital-marketing-specialist.png",
+        image: job3,
         salary: "60k - 80k",
         description:
           "Manage digital marketing campaigns, optimize online presence, and analyze digital marketing performance.",
@@ -273,8 +273,8 @@ export const JobData: JobCategory[] = [
         title: "Front Desk Agent",
         company: "Hospitality Suites",
         location: "Los Angeles, CA",
-        image: "./public/images/front-desk-agent.png",
-        salary: "$30,000 - $40,000",
+        image: job2,
+        salary: "30k - 40k",
         description:
           "Check-in and check-out guests, handle inquiries, and assist with various administrative tasks.",
         requirements:
@@ -285,8 +285,8 @@ export const JobData: JobCategory[] = [
         title: "Front Office Manager",
         company: "Luxury Hotels Inc.",
         location: "Miami, FL",
-        image: "./public/images/front-office-manager.png",
-        salary: "$50,000 - $60,000",
+        image: medical,
+        salary: "50k - 60k",
         description:
           "Oversee front desk operations, manage staff, and ensure smooth guest experiences.",
         requirements:
@@ -307,8 +307,8 @@ export const JobData: JobCategory[] = [
         title: "Housekeeper",
         company: "Clean Sweep Resorts",
         location: "Orlando, FL",
-        image: "./public/images/housekeeper.png",
-        salary: "$25,000 - $30,000",
+        image: pharma,
+        salary: "50k - 70k",
         description:
           "Clean and tidy guest rooms, replenish amenities, and ensure high standards of cleanliness.",
         requirements: "Previous housekeeping experience preferred.",
@@ -318,8 +318,8 @@ export const JobData: JobCategory[] = [
         title: "Housekeeping Supervisor",
         company: "Grand Hospitality Group",
         location: "Las Vegas, NV",
-        image: "./public/images/housekeeping-supervisor.png",
-        salary: "$35,000 - $45,000",
+        image: job4,
+        salary: "55k - 75k",
         description:
           "Supervise housekeeping staff, assign tasks, and maintain inventory of supplies.",
         requirements: "Previous housekeeping experience, leadership skills.",
@@ -339,8 +339,8 @@ export const JobData: JobCategory[] = [
         title: "Customer Service Representative",
         company: "Service First Corporation",
         location: "Chicago, IL",
-        image: "./public/images/customer-service-representative.png",
-        salary: "$35,000 - $45,000",
+        image: medical,
+        salary: "50k - 60k",
         description:
           "Assist customers with inquiries, resolve issues, and ensure high levels of satisfaction.",
         requirements:
@@ -351,8 +351,8 @@ export const JobData: JobCategory[] = [
         title: "Customer Support Specialist",
         company: "Supportive Solutions Ltd.",
         location: "Seattle, WA",
-        image: "./public/images/customer-support-specialist.png",
-        salary: "$40,000 - $50,000",
+        image: job3,
+        salary: "40k - 80k",
         description:
           "Provide technical support, troubleshoot problems, and offer solutions to customers.",
         requirements:
@@ -372,8 +372,8 @@ export const JobData: JobCategory[] = [
         title: "Software Engineer",
         company: "Tech Innovations LLC",
         location: "San Francisco, CA",
-        image: "./public/images/software-engineer.png",
-        salary: "$80,000 - $120,000",
+        image: job2,
+        salary: "40k - 60k",
         description:
           "Design, develop, and maintain software applications, systems, and solutions.",
         requirements:
@@ -384,8 +384,8 @@ export const JobData: JobCategory[] = [
         title: "Mechanical Engineer",
         company: "Precision Engineering Corp.",
         location: "Houston, TX",
-        image: "./public/images/mechanical-engineer.png",
-        salary: "$70,000 - $100,000",
+        image: medical,
+        salary: "50k - 70k",
         description:
           "Design and analyze mechanical systems and components, create prototypes, and oversee manufacturing processes.",
         requirements:
@@ -406,8 +406,8 @@ export const JobData: JobCategory[] = [
         title: "Elementary School Teacher",
         company: "Sunshine Elementary School",
         location: "Austin, TX",
-        image: "./public/images/elementary-teacher.png",
-        salary: "$45,000 - $60,000",
+        image: job4,
+        salary: "$45k - $65k",
         description:
           "Plan and deliver engaging lessons, assess student progress, and create a positive learning environment.",
         requirements:
@@ -418,8 +418,8 @@ export const JobData: JobCategory[] = [
         title: "High School Math Teacher",
         company: "Bright Minds High School",
         location: "New York, NY",
-        image: "./public/images/high-school-math-teacher.png",
-        salary: "$50,000 - $70,000",
+        image: job3,
+        salary: "50k - 60k",
         description:
           "Teach math concepts to high school students, differentiate instruction, and provide support to students as needed.",
         requirements:
@@ -438,8 +438,8 @@ export const JobData: JobCategory[] = [
         title: "Associate Attorney",
         company: "Smith & Associates Law Firm",
         location: "Washington, D.C.",
-        image: "./public/images/associate-attorney.png",
-        salary: "$80,000 - $100,000",
+        image: pharma,
+        salary: "80k - 90k",
         description:
           "Assist with legal research, draft legal documents, and represent clients in court proceedings.",
         requirements:
@@ -450,8 +450,8 @@ export const JobData: JobCategory[] = [
         title: "Legal Assistant",
         company: "Legal Support Services Inc.",
         location: "Boston, MA",
-        image: "./public/images/legal-assistant.png",
-        salary: "$40,000 - $50,000",
+        image: medical,
+        salary: "40k - 55k",
         description:
           "Provide administrative support to legal professionals, organize files, and prepare documents.",
         requirements:

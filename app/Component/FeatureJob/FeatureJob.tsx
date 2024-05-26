@@ -4,6 +4,8 @@ import React, { useContext } from "react";
 import Heading from "../Helper/Heading";
 import Jobcard from "../Helper/Jobcard";
 import { AppContext } from "../Context/Provider";
+import Button from "../Helper/Button";
+import Link from "next/link";
 
 interface Job {
   id: string;
@@ -24,6 +26,9 @@ const FeatureJob: React.FC = () => {
           <Jobcard item={item.jobs} key={item.id} />
         ))}
       </div>
+      <Link href="/jobs">
+        <Button text="View all job" />
+      </Link>
     </>
   );
 };

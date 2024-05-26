@@ -8,7 +8,7 @@ const Allcategory = () => {
   const { jobData } = useContext(AppContext);
   return (
     <div className="container">
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
+      <div className="w-[80%]  mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[10rem] gap-[3rem] items-center">
         {jobData.map((item) => (
           <Link href={`/category/categorydetails/${item.id}`} key={item.id}>
             <div className="p-4 border-2 cursor-pointer hover:scale-10 hover:shadow-sm transition-all duration-300 border-gray-500 rounded-lg border-opacity-10">

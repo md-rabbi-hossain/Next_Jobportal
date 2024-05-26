@@ -5,6 +5,7 @@ import { AppContext, AppContextType, JobData } from "../Context/Provider"; // As
 import Image from "next/image";
 import Link from "next/link";
 import Allcategory from "@/app/category/page";
+import Button from "./Button";
 
 interface CategoryCardProps {
   // Define any props your component might receive here
@@ -12,9 +13,7 @@ interface CategoryCardProps {
 
 const CategoryCard: React.FC<CategoryCardProps> = () => {
   const { jobData } = useContext(AppContext) as AppContextType;
-
   const firstSixCategories = jobData?.slice(0, 6) || [];
-
   return (
     <div className="container">
       <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
@@ -37,11 +36,7 @@ const CategoryCard: React.FC<CategoryCardProps> = () => {
         ))}
       </div>
       <Link href="/category">
-        <div className="text-center mt-[3rem]">
-          <button className="px-8 py-2 hover:bg-blue-900 transition-all duration-300 bg-blue-700 rounded-lg text-white font-semibold ">
-            View all
-          </button>
-        </div>
+        <Button text="View all" />
       </Link>
     </div>
   );
