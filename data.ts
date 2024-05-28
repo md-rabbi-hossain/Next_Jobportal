@@ -46,7 +46,7 @@ export const JobData: JobCategory[] = [
         company: "Tech Solutions Inc.",
         location: "San Francisco, CA",
         image: job1,
-        salary: "80k - 95k",
+        salary: "80k - k",
         description:
           "Design and develop software applications using various programming languages.",
         requirements:

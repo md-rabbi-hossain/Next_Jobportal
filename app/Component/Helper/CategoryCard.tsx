@@ -15,8 +15,8 @@ const CategoryCard: React.FC<CategoryCardProps> = () => {
   const { jobData } = useContext(AppContext) as AppContextType;
   const firstSixCategories = jobData?.slice(0, 6) || [];
   return (
-    <div className="container">
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
+    <>
+      <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
         {firstSixCategories.map((item: JobData) => (
           <Link href={`/category/categorydetails/${item.id}`} key={item.id}>
             <div className="p-4 border-2 cursor-pointer hover:scale-10 hover:shadow-sm transition-all duration-300 border-gray-500 rounded-lg border-opacity-10">
@@ -38,7 +38,7 @@ const CategoryCard: React.FC<CategoryCardProps> = () => {
       <Link href="/category">
         <Button text="View all" />
       </Link>
-    </div>
+    </>
   );
 };
 

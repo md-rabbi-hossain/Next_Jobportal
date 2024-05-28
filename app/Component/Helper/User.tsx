@@ -3,11 +3,11 @@
 import { useContext, useState } from "react";
 import { Session } from "next-auth";
 import Image from "next/image";
+import { signOut } from "next-auth/react";
 
 interface Props {
   session: Session;
 }
-
 const User = ({ session }: Props) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -32,7 +32,10 @@ const User = ({ session }: Props) => {
             {/* Example user data */}
             <p className="text-gray-800">{session.user?.name}</p>
             <p className="text-gray-500">{session.user?.email}</p>
-            <button className="mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            <button
+              onClick={() => signOut()}
+              className="mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+            >
               Logout
             </button>
           </div>

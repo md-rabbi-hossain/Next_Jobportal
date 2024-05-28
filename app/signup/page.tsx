@@ -3,7 +3,7 @@ import SignUpPage from "../Component/Auth/signup";
 
 const page = () => {
   return (
-    <div>
+    <div className="mt-[5rem]">
       <SignUpPage />
     </div>
   );
