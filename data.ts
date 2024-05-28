@@ -336,7 +336,7 @@ export const JobData: JobCategory[] = [
     jobs: [
       {
         id: 401,
-        title: "Customer Service Representative",
+        title: "Service Representative",
         company: "Service First Corporation",
         location: "Chicago, IL",
         image: medical,

@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "./Component/Home/Nav";
 import ClientProvider from "./Component/Hoc/ClientProvider";
 import { AppWrapper } from "./Component/Context/Provider";
+import Footer from "./Component/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <body className={inter.className}>
             <Nav />
             {children}
+            <Footer />
           </body>
         </html>
       </AppWrapper>
