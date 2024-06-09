@@ -41,7 +41,7 @@ export const JobData: JobCategory[] = [
     open: 25,
     jobs: [
       {
-        id: 101,
+        id: 1,
         title: "Software Engineer",
         company: "Tech Solutions Inc.",
         location: "San Francisco, CA",
@@ -53,7 +53,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Computer Science or related field, proficiency in Java, Python, or C++.",
       },
       {
-        id: 102,
+        id: 2,
         title: "Data Scientist",
         company: "Data Insights Co.",
         location: "New York, NY",
@@ -65,7 +65,7 @@ export const JobData: JobCategory[] = [
           "Master's degree in Statistics, Mathematics, or Computer Science, experience with machine learning algorithms.",
       },
       {
-        id: 103,
+        id: 3,
         title: "Web Developer",
         company: "Web Solutions Co.",
         location: "Seattle, WA",
@@ -77,7 +77,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Computer Science or related field, proficiency in front-end technologies like React or Angular.",
       },
       {
-        id: 104,
+        id: 4,
         title: "UX/UI Designer",
         company: "Design Innovations Inc.",
         location: "Los Angeles, CA",
@@ -89,7 +89,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Design or related field, proficiency in design tools like Adobe XD or Sketch.",
       },
       {
-        id: 105,
+        id: 5,
         title: "Network Engineer",
         company: "Network Solutions Ltd.",
         location: "Chicago, IL",
@@ -101,7 +101,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Network Engineering or related field, experience with network protocols and hardware.",
       },
       {
-        id: 106,
+        id: 6,
         title: "Product Manager",
         company: "Product Innovations Co.",
         location: "San Jose, CA",
@@ -122,7 +122,7 @@ export const JobData: JobCategory[] = [
     open: 233,
     jobs: [
       {
-        id: 201,
+        id: 7,
         title: "Registered Nurse",
         company: "Healthcare Services LLC",
         location: "Chicago, IL",
@@ -133,7 +133,7 @@ export const JobData: JobCategory[] = [
         requirements: "Bachelor of Science in Nursing (BSN), valid RN license.",
       },
       {
-        id: 202,
+        id: 8,
         title: "Medical Doctor",
         company: "General Hospital",
         location: "Los Angeles, CA",
@@ -145,7 +145,7 @@ export const JobData: JobCategory[] = [
           "Doctor of Medicine (MD) or Doctor of Osteopathic Medicine (DO) degree, valid medical license.",
       },
       {
-        id: 203,
+        id: 9,
         title: "Licensed Practical Nurse",
         company: "Care Providers Inc.",
         location: "New York, NY",
@@ -157,7 +157,7 @@ export const JobData: JobCategory[] = [
           "Completion of a state-approved LPN program, valid LPN license.",
       },
       {
-        id: 204,
+        id: 10,
         title: "Medical Assistant",
         company: "Healthcare Clinics Ltd.",
         location: "Houston, TX",
@@ -169,7 +169,7 @@ export const JobData: JobCategory[] = [
           "Completion of a medical assistant program, certification is preferred.",
       },
       {
-        id: 205,
+        id: 11,
         title: "Pharmacist",
         company: "Pharmacy Solutions Inc.",
         location: "Philadelphia, PA",
@@ -181,7 +181,7 @@ export const JobData: JobCategory[] = [
           "Doctor of Pharmacy (PharmD) degree, valid pharmacist license.",
       },
       {
-        id: 206,
+        id: 12,
         title: "Physical Therapist",
         company: "Rehabilitation Center",
         location: "Miami, FL",
@@ -202,7 +202,7 @@ export const JobData: JobCategory[] = [
     open: 313,
     jobs: [
       {
-        id: 301,
+        id: 13,
         title: "Sales Representative",
         company: "Sales Solutions Inc.",
         location: "New York, NY",
@@ -214,7 +214,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Business Administration or related field, strong communication and negotiation skills.",
       },
       {
-        id: 302,
+        id: 14,
         title: "Sales Manager",
         company: "Global Sales Corp.",
         location: "Chicago, IL",
@@ -235,7 +235,7 @@ export const JobData: JobCategory[] = [
     open: 63,
     jobs: [
       {
-        id: 401,
+        id: 15,
         title: "Marketing Coordinator",
         company: "Marketing Solutions Agency",
         location: "Los Angeles, CA",
@@ -247,7 +247,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Marketing, Communications, or related field, experience with marketing tools and platforms.",
       },
       {
-        id: 402,
+        id: 16,
         title: "Digital Marketing Specialist",
         company: "Tech Marketing Group",
         location: "San Francisco, CA",
@@ -269,7 +269,7 @@ export const JobData: JobCategory[] = [
     open: 113,
     jobs: [
       {
-        id: 101,
+        id: 17,
         title: "Front Desk Agent",
         company: "Hospitality Suites",
         location: "Los Angeles, CA",
@@ -281,7 +281,7 @@ export const JobData: JobCategory[] = [
           "High school diploma or equivalent, customer service experience preferred.",
       },
       {
-        id: 102,
+        id: 18,
         title: "Front Office Manager",
         company: "Luxury Hotels Inc.",
         location: "Miami, FL",
@@ -303,7 +303,7 @@ export const JobData: JobCategory[] = [
     open: 132,
     jobs: [
       {
-        id: 201,
+        id: 19,
         title: "Housekeeper",
         company: "Clean Sweep Resorts",
         location: "Orlando, FL",
@@ -314,7 +314,7 @@ export const JobData: JobCategory[] = [
         requirements: "Previous housekeeping experience preferred.",
       },
       {
-        id: 202,
+        id: 20,
         title: "Housekeeping Supervisor",
         company: "Grand Hospitality Group",
         location: "Las Vegas, NV",
@@ -335,7 +335,7 @@ export const JobData: JobCategory[] = [
     open: 43,
     jobs: [
       {
-        id: 401,
+        id: 21,
         title: "Service Representative",
         company: "Service First Corporation",
         location: "Chicago, IL",
@@ -347,7 +347,7 @@ export const JobData: JobCategory[] = [
           "Strong communication skills, ability to multitask, previous customer service experience preferred.",
       },
       {
-        id: 402,
+        id: 22,
         title: "Customer Support Specialist",
         company: "Supportive Solutions Ltd.",
         location: "Seattle, WA",
@@ -368,7 +368,7 @@ export const JobData: JobCategory[] = [
     open: 14,
     jobs: [
       {
-        id: 501,
+        id: 23,
         title: "Software Engineer",
         company: "Tech Innovations LLC",
         location: "San Francisco, CA",
@@ -380,7 +380,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Computer Science or related field, proficiency in programming languages such as Java, Python, or JavaScript.",
       },
       {
-        id: 502,
+        id: 24,
         title: "Mechanical Engineer",
         company: "Precision Engineering Corp.",
         location: "Houston, TX",
@@ -402,7 +402,7 @@ export const JobData: JobCategory[] = [
     open: 13,
     jobs: [
       {
-        id: 601,
+        id: 25,
         title: "Elementary School Teacher",
         company: "Sunshine Elementary School",
         location: "Austin, TX",
@@ -414,7 +414,7 @@ export const JobData: JobCategory[] = [
           "Bachelor's degree in Education, teaching certification, strong communication and organizational skills.",
       },
       {
-        id: 602,
+        id: 26,
         title: "High School Math Teacher",
         company: "Bright Minds High School",
         location: "New York, NY",
@@ -434,7 +434,7 @@ export const JobData: JobCategory[] = [
     open: 70,
     jobs: [
       {
-        id: 701,
+        id: 27,
         title: "Associate Attorney",
         company: "Smith & Associates Law Firm",
         location: "Washington, D.C.",
@@ -446,7 +446,7 @@ export const JobData: JobCategory[] = [
           "Juris Doctor (J.D.) degree, admission to the bar, strong analytical and communication skills.",
       },
       {
-        id: 702,
+        id: 28,
         title: "Legal Assistant",
         company: "Legal Support Services Inc.",
         location: "Boston, MA",

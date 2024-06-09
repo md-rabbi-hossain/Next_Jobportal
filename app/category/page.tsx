@@ -3,9 +3,10 @@ import React, { useContext } from "react";
 import { AppContext } from "../Component/Context/Provider";
 import Link from "next/link";
 import Image from "next/image";
+import { AppContextType } from "next/dist/shared/lib/utils";
 
 const Allcategory = () => {
-  const { jobData } = useContext(AppContext);
+  const { jobData } = useContext(AppContext) as AppContextType;
   return (
     <div className="h-[120vh]">
       <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-[10rem] gap-[3rem] items-center">

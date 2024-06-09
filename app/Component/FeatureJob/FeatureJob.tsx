@@ -6,6 +6,7 @@ import Jobcard from "../Helper/Jobcard";
 import { AppContext } from "../Context/Provider";
 import Button from "../Helper/Button";
 import Link from "next/link";
+import { AppContextType } from "next/dist/shared/lib/utils";
 
 interface Job {
   id: string;
@@ -13,8 +14,7 @@ interface Job {
 }
 
 const FeatureJob: React.FC = () => {
-  const { jobData } = useContext(AppContext);
-
+  const { jobData } = useContext(AppContext) as AppContextType;
   return (
     <>
       <Heading
