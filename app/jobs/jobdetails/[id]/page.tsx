@@ -4,8 +4,10 @@ import { AppContext, AppContextType } from "@/app/Component/Context/Provider";
 import Applybutton from "@/app/Component/Helper/Applybutton";
 import Button from "@/app/Component/Helper/Button";
 import Jobcardthree from "@/app/Component/Helper/Jobcardthree";
+import More from "@/app/Component/Helper/More";
 import { getServerSession } from "next-auth";
 import { useContext, useEffect, useState } from "react";
+import { Discuss } from "react-loader-spinner";
 
 interface Job {
   id: number;
@@ -35,6 +37,7 @@ const Jobdetails: React.FC<JobdetailsProps> = ({ params }) => {
     }
   }, [jobData]);
   const finded = jobs.find((job) => params.id === job.id.toString());
+  console.log(finded);
   return (
     <div className="mb-12 mt-[20vh] h-[90vh]">
       {finded ? (
@@ -43,10 +46,18 @@ const Jobdetails: React.FC<JobdetailsProps> = ({ params }) => {
           <Applybutton />
         </div>
       ) : (
-        <div className="w-[90%] items-center sm:flex justify-between mx-auto">
-          <p>Job not found</p>
+        <div className="w-[90%]  h-[100%] items-center sm:flex justify-center mx-auto">
+          <Discuss
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="discuss-loading"
+            wrapperStyle={{}}
+            wrapperClass="discuss-wrapper"
+          />
         </div>
       )}
+      <More finded={finded} />
     </div>
   );
 };
