@@ -35,9 +35,8 @@ const CategoryCard: React.FC<CategoryCardProps> = () => {
           </Link>
         ))}
       </div>
-      <Link href="/category">
-        <Button text="View all" />
-      </Link>
+
+      <Button text="View all" url="/category" />
     </>
   );
 };

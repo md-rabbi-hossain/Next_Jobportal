@@ -26,9 +26,7 @@ const FeatureJob: React.FC = () => {
           <Jobcard item={item.jobs} key={item.id} />
         ))}
       </div>
-      <Link href="/jobs">
-        <Button text="View all job" />
-      </Link>
+      <Button text="View all job" url="/jobs" />
     </>
   );
 };
