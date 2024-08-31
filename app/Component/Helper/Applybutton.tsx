@@ -12,11 +12,13 @@ const Applybutton = () => {
       setSession(sessionData);
     })();
   }, []);
-
-  console.log(session);
   return (
     <div>
-      {session ? <Button text="Apply" /> : <Button text="Sign in to apply" />}
+      {session ? (
+        <Button text="Apply" url="/apply" />
+      ) : (
+        <Button text="Sign in to apply" />
+      )}
     </div>
   );
 };

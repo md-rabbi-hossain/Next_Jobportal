@@ -37,7 +37,6 @@ const Jobdetails: React.FC<JobdetailsProps> = ({ params }) => {
     }
   }, [jobData]);
   const finded = jobs.find((job) => params.id === job.id.toString());
-  console.log(finded);
   return (
     <div className="mb-12 mt-[20vh] h-[90vh]">
       {finded ? (
