@@ -12,12 +12,12 @@ interface Job {
   salary: string;
 }
 
-interface Props {
-  item: Job[];
+interface JobcardProps {
+  item: Job;  // Expect a single Job object
 }
 
-const Jobcard: React.FC<Props> = ({ item }) => {
-  const Sliced = item.slice(2, 6);
+const Jobcard: React.FC<JobcardProps> = ({ item }) => {
+  const Sliced = item.jobs.slice(2, 6);
   return (
     <>
       {Sliced.map((job, index) => (
