@@ -3,7 +3,7 @@
 import React, { useContext, useState, ChangeEvent } from "react";
 import { AppContext, AppContextType } from "../Context/Provider";
 
-interface SearchProps {}
+interface SearchProps { }
 
 const Search: React.FC<SearchProps> = () => {
   const { jobData } = useContext(AppContext) as AppContextType;
@@ -25,7 +25,8 @@ const Search: React.FC<SearchProps> = () => {
     );
     setSearchResults(filteredResults || []);
   };
-  console.log(searchResults);
+
+  console.log(searchResults)
 
   return (
     <div>
